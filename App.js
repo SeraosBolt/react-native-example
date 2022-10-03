@@ -6,6 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.text_color}>Hello World!</Text>
       <Text style={styles.text_color} >Matheus Soares!</Text>
+      <Text style={styles.text_color} >Desenvolvedor Completo!</Text>
       <StatusBar style="auto" />
     </View>
   );
