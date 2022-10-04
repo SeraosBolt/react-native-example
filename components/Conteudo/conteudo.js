@@ -1,9 +1,9 @@
+import React from 'react';
 import { Text, View, Image } from 'react-native';
-
 import styles from './conteudo_style'
 import image from  '../../assets/icon.png.png'
 
-export default function Conteudo(){
+export default function Conteudo(props){
     return(
         <View style={styles.container}>
             <Text style={styles.text_color}>Hello World!</Text>
