@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     card:{
-        flexDirection: 'row',
+        height: 100,
         backgroundColor: '#254689',
         alignItems: 'center',
         justifyContent: 'center',
@@ -10,23 +10,23 @@ const styles = StyleSheet.create({
     
     header:{
         flex: 1,
-        height: 100,
-        backgroundColor: 'white',
+        flexDirection: 'row',
+        backgroundColor: 'red',
         width: '100%',
         alignItems:'center',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         textAlign: 'center',
     },
     
     text_header:{
         fontWeight: 'bold',
         fontSize: 20,
-        marginBottom: -80
     },
     icon:{
         width: 60,
         height: 60,
-        marginBottom: -80
+        borderRadius: 75,
+        marginLeft: 20
     }
 
 })

@@ -1,23 +1,20 @@
 
-import { StyleSheet, Text, View, Image } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 
+import Home from './pages/Home';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import Header from './components/Header/Header';
-import Conteudo from './components/Conteudo/conteudo';
+const stack = createStackNavigator()
 
 export default function App() {
   return (
-    <View style={styles.conteiner}>
-      <Header />
-      <Conteudo />
-    </View>
+      <NavigationContainer>
+        <stack.Navigator>
+          <stack.Screen name='Home' component={Home} />
+        </stack.Navigator>
+      </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  conteiner:{
-    flex: 1
-  }
 
-
-});
