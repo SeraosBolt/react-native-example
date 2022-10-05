@@ -1,16 +1,22 @@
 import React from 'react';
-import { Text, ScrollView, View, Image } from 'react-native';
+import { Text, ScrollView, View, Image, Pressable } from 'react-native';
 
 import Capa from '../../assets/icon.png.png';
 import estilos from './letra_musica_style';
 
-export default function LetraMusica() {
+export default function LetraMusica( props) {
   return (
     <View style={ estilos.container }>
-      <Image source={ Capa } style={ estilos.imagem }/>
-
-      <Text style={ estilos.titulo }>The Beatles</Text>
-      <Text style={ estilos.subtitulo }>Help</Text>
+      <View style={estilos.header}>
+        <Image source={ Capa } style={ estilos.imagem }/>
+        <Pressable
+          style={estilos.btn_voltar}
+          onPress={() =>{props.navigation.navigate('Home')}}>
+           <Text style={estilos.txt_btn_voltar}>Voltar</Text> 
+        </Pressable>
+        <Text style={ estilos.titulo }>The Beatles</Text>
+        <Text style={ estilos.subtitulo }>Help</Text>
+      </View>
 
       <ScrollView>
         <Text style={ estilos.paragrafo }>
