@@ -5,19 +5,19 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#254689',
         alignItems: 'center',
-        justifyContent: 'center',
+        width: '100%'
         
       },
       text_color:{
         color: 'white',
-        fontSize: 30,
-        textAlign: 'center'
+        fontSize: 20,
+
       },
       image:{
         marginTop: 15,
         borderRadius: 25,
-        width: 250,
-        height: 250
+        width: 125,
+        height: 125
       },
     
 })

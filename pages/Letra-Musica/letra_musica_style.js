@@ -10,11 +10,13 @@ const styles = StyleSheet.create({
     imagem:{
         width: '100%',
         height: 100, 
+        resizeMode: 'cover'
 
     },
     paragrafo: {
         fontSize: 22,
-        marginBottom: 20
+        marginBottom: 20,
+        padding: 15
     },
     titulo:{
         textAlign: "center",
