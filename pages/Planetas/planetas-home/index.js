@@ -16,7 +16,7 @@ export default function PlanetasHome(props){
                 >
                 <Text style={styles.txt_btn_voltar}>VOLTAR</Text>    
             </Pressable>
-            
+
             <StatusBar style="light" />
         </View>
     )
