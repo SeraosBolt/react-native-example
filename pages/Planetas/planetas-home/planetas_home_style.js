@@ -16,7 +16,10 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 210,
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        borderBottomLeftRadius: 25,
+        borderBottomRightRadius: 25,
+
     },
     btn_voltar:{
         borderWidth:2,
