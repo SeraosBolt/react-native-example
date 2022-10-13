@@ -4,9 +4,9 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Home from './pages/Home';
 import LetraMusica from './pages/Letra-Musica';
-import PlanetasHome from './pages/Planetas/Planetas-Home';
+import PlanetasHome from './pages/Planetas/planetas-home';
 import GeraNumero from './pages/Gera-Numero';
-import Planetas from './pages/Planetas/Planetas';
+import Planetas from './pages/Planetas/planetas';
 import SistemaSolar from './pages/Planetas/Sistema-Solar';
 import { createStackNavigator } from '@react-navigation/stack';
 
