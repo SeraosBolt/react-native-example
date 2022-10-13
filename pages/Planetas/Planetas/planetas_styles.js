@@ -34,6 +34,13 @@ const style = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 50,
         position: 'absolute'
+    },
+    txt_image2:{
+        bottom: 0,
+        color:'white',
+        fontWeight: 'bold',
+        fontSize: 50,
+        position: 'absolute'
     }
 })
 
