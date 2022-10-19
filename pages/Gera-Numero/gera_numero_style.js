@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         marginBottom: 75
     },
     txt_numero: {
-        fontSize:50,
+        fontSize:70,
         fontWeight: 'bold',
     }, 
     btn_gerar:{

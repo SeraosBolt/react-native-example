@@ -2,11 +2,12 @@ import React from "react";
 import {ScrollView, View, Text, Image, ImageBackground} from 'react-native'
 
 import PlanetaHeader from "../../../components/Planetas-Headers";
+import ImageTitle from "../../../components/image-title";
 
 import planetas from '../../../assets/planetas.jpg'
-import planetas2 from '../../../assets/planetas2.png'
 import ptolemaic from '../../../assets/Ptolemaicsystem-small.png'
 import olympians from '../../../assets/Olympians.jpg'
+
 
 import styles from "./planetas_styles";
 
@@ -16,7 +17,6 @@ export default function Planetas(props){
             <PlanetaHeader nav={props.navigation} image={planetas} text="PLANETAS" page="Planeta-Home" />
             <ScrollView>
                 <View style={styles.content}>
-                    <Image source={planetas2} style={styles.planetas_img}/>
                     <View style={{marginTop: 20}}>
                         <Text style={styles.paragrafo_text}>
                             Um planeta (do grego πλανήτης [planεːtεːs] {'\n'} 
@@ -123,12 +123,8 @@ export default function Planetas(props){
                             tamanho da Terra em sua zona habitável. Os planetas são mais numerosos que as estrelas.{'\n'}
                         </Text>
                     </View>
-                </View>  
-                <ImageBackground source={ptolemaic} style={styles.title_image}>
-                    <Text style={styles.txt_image}>
-                        HISTÓRIA
-                    </Text>
-                </ImageBackground>
+                </View>
+                <ImageTitle image={ptolemaic} text="HISTÓRIA" color='black'/>  
                 <View style={styles.content}>
                     <View style={{marginTop: 20}}>
                         <Text style={styles.paragrafo_text}>
@@ -169,11 +165,47 @@ export default function Planetas(props){
                         </Text> 
                     </View>
                 </View>
-                <ImageBackground source={olympians} style={styles.title_image}>
-                    <Text style={styles.txt_image2}>
-                        Mitologia e nomes
-                    </Text>
-                </ImageBackground>  
+                <ImageTitle image={olympians} text="Mitologia e nomes" color='white'/>
+                <View style={styles.content}>
+                    <View style={{marginTop: 20}}>
+                        <Text style={styles.paragrafo_text}>
+                            A ideia de planeta evoluiu ao longo da 
+                            história, das luzes divinas da antiguidade 
+                            aos objetos concretos da era científica. {'\n'}
+                            O conceito se expandiu para incluir mundos 
+                            não apenas no Sistema Solar, mas em 
+                            centenas de sistemas extrassolares. {'\n'}
+                            As ambiguidades inerentes à definição 
+                            de planeta levaram a muita controvérsia 
+                            científica.{'\n'}
+                        </Text>
+                        <Text style={styles.paragrafo_text}>
+                            Os cinco planetas clássicos do Sistema Solar, 
+                            sendo visíveis a olho nu, são conhecidos 
+                            desde a antiguidade e tiveram um impacto 
+                            significativo na mitologia, cosmologia 
+                            religiosa e astronomia antiga. {'\n'}
+                            Na antiguidade, os astrônomos notaram 
+                            como certas luzes se moviam no céu 
+                            em relação às outras estrelas. {'\n'}
+                            Os antigos gregos chamaram essas luzes 
+                            "πλάνητες ἀστέρες" (planetes asteres: 
+                            “estrelas errantes”) ou simplesmente 
+                            "πλανήτοι" (planētoi: “errantes”), a partir do 
+                            que derivou a palavra atual "planeta".{'\n'}
+                            Nas antigas Grécia, China e Babilônia e em 
+                            quase todas as civilizações pré-modernas,
+                            acreditava-se quase universalmente que a 
+                            Terra era o centro do universo e que todos os 
+                            planetas a circundavam. {'\n'}
+                            A razão para esta percepção era que todos os 
+                            dias as estrelas e planetas pareciam girar em 
+                            torno da Terra, e o aparente senso comum da 
+                            percepção de que a Terra era sólida e estável
+                            e que estava em repouso e não se movendo.
+                        </Text> 
+                    </View>
+                </View>  
             </ScrollView>
         </View>
 

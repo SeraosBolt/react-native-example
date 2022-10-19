@@ -21,27 +21,6 @@ const style = StyleSheet.create({
         marginBottom: 25
         
     },
-    title_image:{
-        width: '100%',
-        height: 200,
-        resizeMode: "center",
-        alignItems: 'center',
-        position: 'relative'
-    },
-    txt_image:{
-        bottom: 0,
-        color:'black',
-        fontWeight: 'bold',
-        fontSize: 50,
-        position: 'absolute'
-    },
-    txt_image2:{
-        bottom: 0,
-        color:'white',
-        fontWeight: 'bold',
-        fontSize: 50,
-        position: 'absolute'
-    }
 })
 
 export default style
