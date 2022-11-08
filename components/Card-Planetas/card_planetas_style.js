@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native'
-import { back } from 'react-native/Libraries/Animated/Easing'
+
 
 const styles = StyleSheet.create({
     card:{
@@ -35,9 +35,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bolt',
         fontSize: 13
     }
-
-
-
 })
 
 export default styles
