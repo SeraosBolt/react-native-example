@@ -18,8 +18,8 @@ const style = StyleSheet.create({
     },
     content:{
         marginTop: 25,
-        marginBottom: 25
-        
+        marginBottom: 25,
+        flexWrap: 'wrap'
     },
 })
 
